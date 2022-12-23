@@ -1,19 +1,20 @@
 package emailSystem.Email;
 
 public class Account {
-    private String userMail;
-    private String userPassword;
+    private String mail;
+    private String password;
 
-    public Account(String userMail, String userPassword) {
-        this.userMail = userMail;
-        this.userPassword = userPassword;
+    public String getMail() {
+        return mail;
     }
 
-    public String getUserMail() {
-        return userMail;
+    public String getPassword() {
+        return password;
     }
 
-    public String getUserPassword() {
-        return userPassword;
+    public Account(String mail, String password) {
+        this.mail = mail;
+        this.password = password;
+
     }
 }

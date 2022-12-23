@@ -10,7 +10,6 @@ import java.io.IOException;
 import java.net.URL;
 
 public class Starter extends Application {
-    public static Stage stage;
     @Override
     public void start(Stage stage) throws Exception {
         stage.setTitle("Email system");

@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<Pane   fx:controller="emailSystem.controllers.onStart"
+<Pane   fx:controller="emailSystem.controllers.OnStart"
         maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <GridPane alignment="CENTER" hgap="3.0" layoutX="150.0" layoutY="38.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="325.0" prefWidth="300.0" style="-fx-alignment: center; -fx-background-color: #fff; -fx-background-radius: 14;" vgap="3.0">

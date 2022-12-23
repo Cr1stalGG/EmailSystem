@@ -1,6 +1,8 @@
 module emailSystem{
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.mail;
+
 
     exports emailSystem to javafx.graphics, javafx.fxml;
 
