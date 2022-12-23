@@ -9,10 +9,9 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 public class SendMessage {
-    private static Account user = new Account(LogIn.userMail.getText(), LogIn.userPassword.getText());
 
     public static void sendMessage( String to, String subject, String text){
-
+        Account user = new Account(LogIn.getMail(), LogIn.getPassword());
         try {
             // Create a default MimeMessage object.
             Message message = new MimeMessage(HostSettings.getSession(HostSettings.getProperties(), user.getMail(), user.getPassword()));

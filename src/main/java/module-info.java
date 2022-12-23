@@ -6,7 +6,10 @@ module emailSystem{
 
     exports emailSystem to javafx.graphics, javafx.fxml;
 
+
     opens emailSystem;
     exports emailSystem.controllers to javafx.fxml, javafx.graphics;
     opens emailSystem.controllers;
+    exports emailSystem.Email to javafx.fxml, javafx.graphics;
+    opens emailSystem.Email;
 }
