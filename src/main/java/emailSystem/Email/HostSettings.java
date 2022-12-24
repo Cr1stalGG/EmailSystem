@@ -5,7 +5,8 @@ import javax.mail.Session;
 import java.util.Properties;
 
 public class HostSettings {
-    private static final String host = "smtp.gmail.com";
+    private static final String host = "smtp.gmail.com"; //smtp.gmail.com - 74.125.71.108
+    private static final String tmpHost="74.125.71.108";
 
     public static Properties getProperties(){
         Properties props = new Properties();

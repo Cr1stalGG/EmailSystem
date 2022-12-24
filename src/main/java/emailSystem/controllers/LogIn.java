@@ -1,6 +1,5 @@
 package emailSystem.controllers;
 
-import emailSystem.Email.SendMessage;
 import emailSystem.fxUtils.PageLoader;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -26,9 +25,9 @@ public class LogIn {
         PageLoader.load(actionEvent, getClass().getResource("/onStart.fxml"));
     }
 
-    public void logInAction(ActionEvent event) {
+    public void logInAction(ActionEvent event) throws IOException {
         mail = userMail.getText();
         password = userPassword.getText();
-        SendMessage.sendMessage("alexwinner1337@gmail.com", "Test", "Test message");
+        PageLoader.load(event, getClass().getResource("/sendPage.fxml"));
     }
 }
