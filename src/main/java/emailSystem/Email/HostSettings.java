@@ -7,13 +7,15 @@ import java.util.Properties;
 public class HostSettings {
     private static final String host = "smtp.gmail.com"; //smtp.gmail.com - 74.125.71.108
     private static final String tmpHost="74.125.71.108";
+    private static final String port = "25";
+    private static final String tmpPort = "587";
 
     public static Properties getProperties(){
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", host);
-        props.put("mail.smtp.port", "25");
+        props.put("mail.smtp.port", tmpPort);
         return props;
     }
     public static Session getSession(Properties properties, String mail, String password){
